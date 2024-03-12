@@ -39,7 +39,7 @@ function Navbar() {
           <Link href="" className={buttonNavbar}>
             <IoMdHeartEmpty />
           </Link>
-          <Link href="/auth/login" className={buttonNavbar}>
+          <Link href="/auth/register" className={buttonNavbar}>
             <RiUserLine />
           </Link>
           <Link href="" className={buttonNavbar}>

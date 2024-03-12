@@ -1,11 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 function page() {
   return (
     <main className="flex h-screen m-auto border-t border-zinc-400">
-      <div className="w-5/12">
+      <div className="w-[45%]">
         <img
-          className="object-cover object-top object-center w-full h-full"
+          className="object-cover object-top w-full h-full"
           src="/assets/images/login.png"
           alt=""
         />
