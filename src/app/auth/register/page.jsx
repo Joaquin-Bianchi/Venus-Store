@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { supabase } from "@/utils/supabase/client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -16,9 +15,6 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      await supabase.auth.signInWithOtp({
-        email,
-      });
       // ALMACENAR LOS DATOS DEL USUARIO EN LA TABLA USERS
       router.push("/");
     } catch (error) {
@@ -36,22 +32,13 @@ export default function Login() {
             alt=""
           />
         </div>
-        <div className=" w-1/2 px-20 flex flex-col items-center">
-          <h1 className="text-4xl mt-10 ">Register</h1>
+        <div className=" w-1/2 px-20 flex flex-col">
+          <h1 className="text-4xl mt-10 mb-10 ">Register</h1>
           <form
             onSubmit={handleRegister}
             className="flex flex-col gap-1 w-full"
             action=""
           >
-            <label htmlFor="email">Email</label>
-            <input
-              className="w-full bg-gray-100"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-              name="email"
-              type="email"
-              required
-            />
             <label htmlFor="name">Name</label>
             <input
               className="w-full bg-gray-100"
@@ -61,7 +48,24 @@ export default function Login() {
               type="name"
               required
             />
-
+            <label htmlFor="email">Email</label>
+            <input
+              className="w-full bg-gray-100"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              name="email"
+              type="email"
+              required
+            />
+            <label htmlFor="password">Password</label>
+            <input
+              className="w-full bg-gray-100"
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
+              name="password"
+              type="password"
+              required
+            />
             <button className="bg-violet-600 text-white">Enviar</button>
           </form>
         </div>
