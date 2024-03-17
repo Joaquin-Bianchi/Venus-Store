@@ -1,7 +1,7 @@
 import NextAuth from "next-auth";
-
 import CredentialsProvider from "next-auth/providers/credentials";
 import { pages } from "next/dist/build/templates/app-page";
+
 const handler = NextAuth({
   providers: [
     CredentialsProvider({
