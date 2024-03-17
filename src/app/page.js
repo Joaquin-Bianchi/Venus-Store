@@ -11,7 +11,6 @@ import CategoriesForWomen from "@/components/Sections/CategoriesForWomen";
 export default function Home() {
   return (
     <>
-      <Navbar />
       <SliderMain />
       <SliderNewArrival></SliderNewArrival>
       <CardHero />
@@ -19,7 +18,7 @@ export default function Home() {
       <Oferts />
       <CategoriesForWomen />
       <Feedback />
-      
+
       <Footer />
     </>
   );
