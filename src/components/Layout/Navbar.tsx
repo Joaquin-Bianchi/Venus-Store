@@ -12,16 +12,16 @@ async function Navbar() {
   return (
     <header className="flex items-center w-full 2xl:px-36    text-black bg-slate-100 h-24 overflow-hidden">
       <nav className="flex items-center justify-between w-full">
-        <Link href="/">
+        <Link className="mt-3" href="/">
           <Image
+            width={170}
+            height={300}
             src="/assets/images/logo-venus.png"
-            width={190}
-            height={100}
             alt="logo-venus"
           />
         </Link>
         <div className="hidden lg:flex items-center gap-10 text-lg">
-          <Link href="" className="font-semibold">
+          <Link href="/shop" className="font-semibold">
             Shop
           </Link>
           <Link href="">Men</Link>
