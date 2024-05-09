@@ -6,6 +6,7 @@ import Feedback from "../components/Sections/Feedback";
 import Ofertas from "../components/Sections/Oferts";
 import SliderMain from "../components/Sliders/SliderMain";
 import SliderNewArrival from "../components/Sliders/SliderNewArrival";
+
 export default function Home() {
   return (
     <>
