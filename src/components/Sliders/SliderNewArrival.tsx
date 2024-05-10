@@ -8,7 +8,7 @@ function NewArrival() {
         <div className="rounded w-2 h-12 bg-purple-600"></div>
         <h2 className="text-3xl ml-3 font-bold">Best Clothes</h2>
       </div>
-      <div className="flex justify-center gap-36">
+      <div className="flex justify-between">
         <CardNewArrival></CardNewArrival>
         <CardNewArrival></CardNewArrival>
         <CardNewArrival></CardNewArrival>
