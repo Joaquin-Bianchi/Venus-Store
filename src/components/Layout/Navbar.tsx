@@ -3,8 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { IoCartOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
-import { RiUserLine } from "react-icons/ri";
+import { IoIosLogOut } from "react-icons/io";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+import { Dropdown, DropdownItem } from "flowbite-react";
+import DropdownProfile from "./DropdownProfile";
 
 async function Navbar() {
   const { getUser } = getKindeServerSession();
@@ -46,12 +48,11 @@ async function Navbar() {
           <div className="flex items-center gap-3 ">
             {user ? (
               <>
-                <Link
+                {/* <Link
                   href=""
                   className="bg-gray-200 ease-in-out text-3xl duration-300 text-black px-3 py-2  rounded-lg   gap-1 font-medium flex items-center"
-                >
-                  <RiUserLine />
-                </Link>
+                ></Link> */}
+                <DropdownProfile></DropdownProfile>
               </>
             ) : (
               <>
