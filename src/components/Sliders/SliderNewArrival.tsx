@@ -6,9 +6,9 @@ function NewArrival() {
     <section className="pt-10 mb-20 w-[90%] m-auto">
       <div className="flex items-center mb-6">
         <div className="rounded w-2 h-12 bg-purple-600"></div>
-        <h2 className="text-3xl ml-3 font-bold">New arrivals</h2>
+        <h2 className="text-3xl ml-3 font-bold">Best Clothes</h2>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center gap-36">
         <CardNewArrival></CardNewArrival>
         <CardNewArrival></CardNewArrival>
         <CardNewArrival></CardNewArrival>

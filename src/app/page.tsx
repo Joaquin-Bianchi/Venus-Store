@@ -1,5 +1,5 @@
 import CardHero from "../components/Cards/CardHero";
-import Footer from "../components/Layout/Footer";
+import Footer from "../components/Sections/Footer";
 import CategoriesForMen from "../components/Sections/CategoriesForMen";
 import CategoriesForWomen from "../components/Sections/CategoriesForWomen";
 import Feedback from "../components/Sections/Feedback";
