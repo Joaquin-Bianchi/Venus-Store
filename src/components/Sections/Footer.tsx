@@ -11,7 +11,11 @@ function Footer() {
             className="flex justify-center space-x-3 lg:justify-start"
           >
             <div className="flex items-center justify-center w-60 h-12">
-              <img className="w-full" src="" alt="" />
+              <img
+                className="w-full"
+                src="/assets/images/logo-venus-dark.png"
+                alt=""
+              />
             </div>
           </a>
         </div>
