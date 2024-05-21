@@ -3,16 +3,32 @@ import Link from "next/link";
 import Image from "next/image";
 import { IoCartOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
-import { IoIosLogOut } from "react-icons/io";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-import { Dropdown, DropdownItem } from "flowbite-react";
 import DropdownProfile from "./DropdownProfile";
-
+import ActiveLink from "./ActiveLink";
+const navItems = [
+  {
+    path: "/shop",
+    name: "Shop",
+  },
+  {
+    path: "/men",
+    name: "Men",
+  },
+  {
+    path: "/women",
+    name: "Women",
+  },
+  {
+    path: "/sneakers",
+    name: "Sneakers",
+  },
+];
 async function Navbar() {
   const { getUser } = getKindeServerSession();
   const user = await getUser();
   return (
-    <header className="flex items-center w-full 2xl:px-36    text-black bg-slate-100 h-24 overflow-hidden">
+    <header className="flex items-center w-full 2xl:px-36   text-black bg-slate-100 h-24 overflow-hidden">
       <nav className="flex items-center justify-between w-full">
         <Link className="mt-3" href="/">
           <Image
@@ -22,15 +38,16 @@ async function Navbar() {
             alt="logo-venus"
           />
         </Link>
-        <div className="hidden lg:flex items-center gap-10 text-lg">
-          <Link href="/shop" className="font-semibold">
-            Shop
-          </Link>
-          <Link href="">Men</Link>
-          <Link href="">Woman</Link>
-          <Link href="">Combos</Link>
-          <Link href="">Joggers</Link>
+        <div className="hidden lg:flex  items-center gap-10 text-lg">
+          {navItems.map((navItem) => (
+            <ActiveLink
+              name={navItem.name}
+              path={navItem.path}
+              key={navItem.path}
+            ></ActiveLink>
+          ))}
         </div>
+        {/* Search button */}
         <div className=" items-center text-gray-700 gap-3 hidden lg:flex bg-gray-200 border border-gray-300 py-2 px-3 rounded-md">
           <CiSearch />
           <input

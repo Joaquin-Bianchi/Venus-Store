@@ -3,7 +3,7 @@ import { Carousel } from "flowbite-react";
 import React from "react";
 function SliderMain() {
   return (
-    <div className="h-56 sm:h-64 xl:h-[380px] 2xl:h-[596px]">
+    <div className="h-[400px] md:[400px] xl:h-[480px] 2xl:h-[596px]">
       <Carousel slideInterval={2000}>
         <img
           src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
