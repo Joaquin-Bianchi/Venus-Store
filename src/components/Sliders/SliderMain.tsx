@@ -1,30 +1,32 @@
 "use client";
 import { Carousel } from "flowbite-react";
+import Link from "next/link";
 import React from "react";
 function SliderMain() {
   return (
-    <div className="h-[400px] md:[400px] xl:h-[480px] 2xl:h-[596px]">
-      <Carousel slideInterval={2000}>
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-          alt=""
-        />
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-          alt=""
-        />
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-          alt=""
-        />
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-          alt=""
-        />
-        <img
-          src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-          alt=""
-        />
+    <div className="h-[350px] sm:[500px] md:[540px]  xl:h-[680px] 2xl:h-[706px] m-auto">
+      <Carousel className="w-full" slideInterval={600000000}>
+        <Link className="h-full" href="shop">
+          <img
+            className="w-full h-full object-left 2xl:object-top object-cover "
+            src="/assets/images/slider-1.jpg"
+            alt=""
+          />
+        </Link>
+        <Link className="h-full" href="shop">
+          <img
+            className="w-full h-full object-left 2xl:object-top object-cover "
+            src="/assets/images/slider-2.webp"
+            alt=""
+          />
+        </Link>
+        <Link className="h-full" href="shop">
+          <img
+            className="w-full h-full object-center object-cover "
+            src="/assets/images/slider-3.jpg"
+            alt=""
+          />
+        </Link>
       </Carousel>
     </div>
   );
