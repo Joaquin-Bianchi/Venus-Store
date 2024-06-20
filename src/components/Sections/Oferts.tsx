@@ -15,28 +15,28 @@ function Ofertas() {
       <div className="flex text-xl flex-col items-center md:flex-row md:gap-20 md:justify-center">
         <div className="w-40">
           <img
-            src="/assets/images/brands/nike.svg"
+            src="/images/brands/nike.svg"
             alt="Logo de nike"
             className="w-full h-auto"
           />
         </div>
         <div className="w-40">
           <img
-            src="/assets/images/brands/levis.svg"
+            src="/images/brands/levis.svg"
             alt="Logo de levis"
             className="w-full h-auto"
           />
         </div>
         <div className="w-40">
           <img
-            src="/assets/images/brands/puma.svg"
+            src="/images/brands/puma.svg"
             alt="Logo de Puma"
             className="w-full h-auto"
           />
         </div>
         <div className="w-40">
           <img
-            src="/assets/images/brands/adidas.svg"
+            src="/images/brands/adidas.svg"
             alt="Logo de Adidas"
             className="w-full h-auto"
           />
@@ -44,7 +44,7 @@ function Ofertas() {
 
         <div className="w-40">
           <img
-            src="/assets/images/brands/supreme.svg"
+            src="/images/brands/supreme.svg"
             alt="Logo de Supreme"
             className="w-full h-auto"
           />

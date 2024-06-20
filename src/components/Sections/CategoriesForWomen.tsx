@@ -1,5 +1,5 @@
 import React from "react";
-import CardExploreNow from "../Cards/CardExploreNow";
+import CardExploreNow from "../cards/CardExploreNow";
 
 function CategoriesForWomen() {
   return (
