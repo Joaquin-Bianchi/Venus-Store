@@ -1,11 +1,11 @@
-import CardHero from "../components/Cards/CardHero";
-import Footer from "../components/Sections/Footer";
-import CategoriesForMen from "../components/Sections/CategoriesForMen";
-import CategoriesForWomen from "../components/Sections/CategoriesForWomen";
-import Feedback from "../components/Sections/Newsletter";
-import Ofertas from "../components/Sections/Oferts";
-import SliderMain from "../components/Sliders/SliderMain";
-import SliderNewArrival from "../components/Sliders/SliderNewArrival";
+import CardHero from "../components/cards/CardHero";
+import Footer from "../components/footer/Footer";
+import CategoriesForMen from "../components/sections/CategoriesForMen";
+import CategoriesForWomen from "../components/sections/CategoriesForWomen";
+import Newsletter from "../components/footer/Newsletter";
+import Ofertas from "../components/sections/Oferts";
+import SliderMain from "../components/sliders/SliderMain";
+import SliderNewArrival from "../components/sliders/SliderNewArrival";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <CategoriesForMen />
       <Ofertas />
       <CategoriesForWomen />
-      <Feedback />
+      <Newsletter />
       <Footer />
     </>
   );
