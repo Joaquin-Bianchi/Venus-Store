@@ -14,15 +14,15 @@ const navItems = [
     name: "Tienda",
   },
   {
-    path: "/category/men",
+    path: "/gender/men",
     name: "Hombre",
   },
   {
-    path: "/category/women",
+    path: "/gender/women",
     name: "Mujer",
   },
   {
-    path: "/category/kid",
+    path: "/gender/kid",
     name: "Niños",
   },
 ];
